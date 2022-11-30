@@ -1,8 +1,16 @@
 .navbar {
     background: black;
-    height: 87px;
+    /* height: 87px; */
+    border-bottom: 2px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 .nav-container a {
     color: #ffffff;
     font-family: 'Inter';
@@ -12,9 +20,23 @@
     line-height: 29px;
 }
 
+
+.nav-item{
+    padding: 0 15px;
+}
+.arrow{
+    color: white;
+    font-size: 50px;
+}
+
+.arrow a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .hero-section {
     background: black;
-    height: 1030px;
+    height: 60%;
 }
 
 .hero-heading {
@@ -22,10 +44,177 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 200px;
-    line-height: 242px;
+    font-size: 9vw;
+    padding-left: 8vw;
+    line-height: 10vw;
+    padding-top: 10vw;
+    padding-bottom: 7vw;
+    animation: fadeIn 2s;
 }
 
-.img-container img {
-    
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+.about-section {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img {
+    padding-top: 10vw;
+    /* padding-left: 8vw; */
+    padding-bottom: 10vw;
+}
+
+.abt-img-container{
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.about-container {
+    padding-top: 10vw;
+    /* padding-left: 8vw; */
+}
+
+.about-head {
+    font-family: 'Inter';
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4vw;
+}
+
+.about-para {
+    font-family: 'Inter';
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2vw;
+    padding-top: 2vw;
+    padding-right: 10vw;
+    justify-content: center;
+}
+
+.service-section {
+    height: 40vw;
+}
+
+.service-container {
+    padding-left: 8vw;
+}
+
+.service-head {
+    font-family: 'Inter';
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4vw;
+}
+
+.card-scroll {
+    padding: 0 4vw;
+}
+
+.card-scroll  .row {
+    overflow-x: auto;
+}
+
+.service-card {
+    border: 3px solid black;
+    transition: background-color .3s ease-out 100ms;
+    transition: color .3s ease-out 100ms;
+}
+
+.service-card:hover{
+    background-color: black;
+    color: white;
+}
+
+.ser-card-body {
+    padding: 2vw;
+}
+
+.service-title {
+    font-family: 'Inter';
+    font-weight: 400; 
+    font-size: 2vw;
+}
+
+.card-text {
+    font-family: 'Inter';
+    font-weight: 300; 
+    font-size: 1vw;
+    justify-content: center;
+}
+
+.card-container{
+    padding: 6vw 5vw 6vw 5vw;
+}
+
+
+::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb:horizontal {
+    background: rgb(0, 0, 0); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #606060; 
+  }
+
+
+.contact-section {
+    background: black;
+    height: 50vw;
+}  
+
+.contact-head {
+    padding-top: 5vw;
+    font-family: 'Inter';
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4vw; 
+    color: #ffffff;
+}
+
+
+.footer-form-container{
+    background: black;
+    padding: 10px 200px 100px 200px;
+}
+
+.footer-form-container input{
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 10px;
+    font-family: 'Inter';
+    font-size: 1vw;
+}
+
+
+form {
+    padding-top: 3vw;
+    width: 100%;
+}
+
+.input-row{
+    padding-top: 15px;;
+}
+
+.submit-button{
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 50px;
 }
